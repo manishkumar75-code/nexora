@@ -1,0 +1,397 @@
+.Services {
+    min-height: 100vh;
+    padding: 30px 55px 25px;
+
+    background:
+        linear-gradient(
+            rgba(2, 8, 23, 0.35),
+            rgba(2, 8, 23, 0.35)
+        ),
+        url("../assets/Services-bg.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: white;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.Services-header {
+    height: 165px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+.Film-strip {
+    font-size: 125px;
+    color: #f59e0b;
+    opacity: 0.8;
+    transform: rotate(-12deg);
+    width: 270px;
+}
+
+
+.Nexora-logo {
+    text-align: center;
+}
+
+
+.Nexora-logo h1 {
+    font-size: 68px;
+    letter-spacing: 8px;
+    margin: 0;
+    font-weight: 800;
+}
+
+
+.Nexora-logo h1 span {
+    color: #f59e0b;
+}
+
+
+.Nexora-logo p {
+    margin: 10px 0 0;
+    font-size: 18px;
+    letter-spacing: 6px;
+    color: #e5e7eb;
+}
+
+
+.Nexora-logo p span {
+    color: #f59e0b;
+    margin: 0 8px;
+}
+
+
+.Food-title {
+    position: relative;
+    width: 270px;
+    text-align: center;
+}
+
+
+.Food-title h2 {
+    color: #f59e0b;
+    font-size: 30px;
+    font-style: italic;
+    margin: 0;
+    font-family: cursive;
+}
+
+
+.Food-title span {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 45px;
+}
+
+
+/* =========================
+   SERVICES CARDS
+========================= */
+
+.Services-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+    max-width: 1430px;
+    margin: 0 auto;
+}
+
+
+/* Card */
+
+.Service-card {
+    background: #050b18;
+    border: 1px solid #f59e0b;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow:
+        0 0 15px rgba(245, 158, 11, 0.08),
+        inset 0 0 25px rgba(255, 255, 255, 0.015);
+}
+
+
+/* Image */
+
+.Service-image {
+    width: 100%;
+    height: 315px;
+    overflow: hidden;
+}
+
+
+.Service-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+/* Card Content */
+
+.Service-content {
+    padding: 18px 28px 20px;
+}
+
+
+.Service-content h3 {
+    font-size: 27px;
+    margin: 0 0 5px;
+}
+
+
+.Service-content h2 {
+    color: #f59e0b;
+    font-size: 32px;
+    margin: 0 0 15px;
+}
+
+
+/* Quantity */
+
+.Quantity-control {
+    height: 52px;
+    border: 1px solid #8b5a25;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px;
+}
+
+
+.Quantity-control button {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 1px solid #f59e0b;
+    background: transparent;
+    color: white;
+    font-size: 27px;
+    cursor: pointer;
+}
+
+
+.Quantity-control button:last-child {
+    background: #f59e0b;
+    color: #111827;
+}
+
+
+.Quantity-control button:hover {
+    transform: scale(1.05);
+}
+
+
+.Quantity-control span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.Quantity-text {
+    text-align: center;
+    color: #d1d5db;
+    margin: 12px 0 0;
+    font-size: 16px;
+}
+
+
+/* =========================
+   SUMMARY
+========================= */
+
+.Service-summary {
+    max-width: 1365px;
+    min-height: 100px;
+    margin: 35px auto 0;
+    padding: 12px 28px;
+    border: 1px solid #8b5a25;
+    border-radius: 25px;
+    background: rgba(5, 11, 24, 0.9);
+
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    box-sizing: border-box;
+}
+
+
+.Summary-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex: 1;
+}
+
+
+.Summary-icon {
+    font-size: 38px;
+    color: #f59e0b;
+}
+
+
+.Summary-item div:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+
+.Summary-item span {
+    color: #d1d5db;
+    font-size: 17px;
+}
+
+
+.Summary-item strong {
+    color: #f59e0b;
+    font-size: 27px;
+}
+
+
+.Grand-price {
+    font-size: 34px !important;
+}
+
+
+.Summary-line {
+    width: 1px;
+    height: 60px;
+    background: #8b5a25;
+}
+
+
+/* Continue */
+
+.Continue-btn {
+    width: 275px;
+    height: 70px;
+    border: none;
+    border-radius: 40px;
+    background: linear-gradient(135deg, #ffb52e, #f59e0b);
+    color: #111827;
+    font-size: 21px;
+    font-weight: bold;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.Continue-btn span {
+    font-size: 35px;
+}
+
+
+.Continue-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(245, 158, 11, 0.25);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.Services-footer {
+    max-width: 1020px;
+    margin: 28px auto 0;
+
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+
+.Services-footer span {
+    height: 1px;
+    background: #8b5a25;
+    flex: 1;
+}
+
+
+.Services-footer p {
+    margin: 0;
+    white-space: nowrap;
+    color: #d1d5db;
+    font-size: 12px;
+    letter-spacing: 6px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1100px) {
+
+    .Services-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .Services-header {
+        height: auto;
+    }
+
+    .Film-strip,
+    .Food-title {
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .Services {
+        padding: 25px 20px;
+    }
+
+    .Services-list {
+        grid-template-columns: 1fr;
+    }
+
+    .Nexora-logo h1 {
+        font-size: 45px;
+    }
+
+    .Nexora-logo p {
+        font-size: 12px;
+        letter-spacing: 3px;
+    }
+
+    .Service-summary {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 25px;
+    }
+
+    .Summary-line {
+        width: 100%;
+        height: 1px;
+    }
+
+    .Continue-btn {
+        width: 100%;
+    }
+
+}
+

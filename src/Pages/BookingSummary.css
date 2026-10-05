@@ -1,0 +1,305 @@
+
+/* ================================
+   BOOKING SUMMARY PAGE
+================================ */
+
+.BookingSummary {
+    min-height: 100vh;
+    padding: 80px 30px 60px;
+    background:
+        radial-gradient(
+            circle at top,
+            rgba(245, 158, 11, 0.10),
+            transparent 35%
+        ),
+        #020617;
+    color: white;
+    box-sizing: border-box;
+}
+
+
+/* ================================
+   PAGE TITLE
+================================ */
+
+.BookingSummary > h1 {
+    text-align: center;
+    font-size: 42px;
+    margin: 0 0 40px;
+    letter-spacing: 1px;
+}
+
+.BookingSummary > h1::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    background: #f59e0b;
+    margin: 15px auto 0;
+    border-radius: 10px;
+}
+
+
+/* ================================
+   MAIN BOOKING CARD
+================================ */
+
+.Booking-card {
+    width: min(750px, 100%);
+    margin: 0 auto;
+    padding: 35px;
+    box-sizing: border-box;
+
+    background:
+        linear-gradient(
+            145deg,
+            #111827,
+            #070d18
+        );
+
+    border: 1px solid rgba(245, 158, 11, 0.45);
+    border-radius: 22px;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.55),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+
+/* ================================
+   MOVIE INFORMATION
+================================ */
+
+.Movie-info {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #334155;
+}
+
+.Movie-info span {
+    color: #94a3b8;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.Movie-info h2 {
+    margin: 8px 0;
+    font-size: 30px;
+    color: white;
+}
+
+.Movie-info p {
+    margin: 0;
+    color: #f59e0b;
+    font-size: 16px;
+}
+
+
+/* ================================
+   SUMMARY SECTIONS
+================================ */
+
+.Summary-section {
+    padding: 25px 0;
+    border-bottom: 1px solid #334155;
+}
+
+.Summary-section h3 {
+    margin: 0 0 18px;
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+
+/* ================================
+   SELECTED SEATS
+================================ */
+
+.Selected-seats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.Selected-seats span {
+    min-width: 45px;
+    padding: 9px 14px;
+    box-sizing: border-box;
+
+    text-align: center;
+
+    background: rgba(245, 158, 11, 0.12);
+    border: 1px solid #f59e0b;
+    border-radius: 8px;
+
+    color: #f59e0b;
+    font-weight: bold;
+}
+
+
+/* ================================
+   FOOD & SERVICES
+================================ */
+
+.Service-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 13px 15px;
+    margin-bottom: 10px;
+
+    background: rgba(15, 23, 42, 0.8);
+    border: 1px solid #334155;
+    border-radius: 10px;
+
+    color: #e5e7eb;
+}
+
+.Service-item:last-child {
+    margin-bottom: 0;
+}
+
+.Service-item span:first-child {
+    font-weight: 600;
+}
+
+.Service-item span:last-child {
+    color: #f59e0b;
+    font-weight: bold;
+}
+
+
+/* ================================
+   PRICE SUMMARY
+================================ */
+
+.Price-summary {
+    padding: 25px 0;
+}
+
+.Price-summary > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 15px;
+}
+
+.Price-summary span {
+    color: #cbd5e1;
+    font-size: 16px;
+}
+
+.Price-summary strong {
+    color: white;
+    font-size: 18px;
+}
+
+.Price-summary hr {
+    border: none;
+    border-top: 1px solid #475569;
+    margin: 20px 0;
+}
+
+
+/* ================================
+   GRAND TOTAL
+================================ */
+
+.Price-summary .Grand-total {
+    margin-bottom: 0;
+    padding: 15px 18px;
+
+    background: rgba(245, 158, 11, 0.08);
+    border: 1px solid rgba(245, 158, 11, 0.35);
+    border-radius: 12px;
+}
+
+.Grand-total span {
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.Grand-total strong {
+    color: #f59e0b;
+    font-size: 28px;
+}
+
+
+/* ================================
+   CONFIRM BOOKING BUTTON
+================================ */
+
+.Confirm-booking-btn {
+    width: 100%;
+    height: 55px;
+
+    margin-top: 10px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: linear-gradient(
+        135deg,
+        #ffb52e,
+        #f59e0b
+    );
+
+    color: #111827;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.Confirm-booking-btn:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(245, 158, 11, 0.3);
+}
+
+.Confirm-booking-btn:active {
+    transform: translateY(0);
+}
+
+
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 700px) {
+
+    .BookingSummary {
+        padding: 50px 18px;
+    }
+
+    .BookingSummary > h1 {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    .Booking-card {
+        padding: 25px 20px;
+        border-radius: 18px;
+    }
+
+    .Movie-info h2 {
+        font-size: 25px;
+    }
+
+    .Grand-total span {
+        font-size: 17px;
+    }
+
+    .Grand-total strong {
+        font-size: 24px;
+    }
+}

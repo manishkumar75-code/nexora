@@ -1,0 +1,829 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: #030712;
+}
+
+.Home {
+    min-height: 100vh;
+    background: #030712;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   PREMIUM HERO
+========================= */
+
+.Home-hero {
+    min-height: 620px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 90px 8%;
+
+    box-sizing: border-box;
+
+    position: relative;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(2, 6, 23, 0.98) 0%,
+            rgba(2, 6, 23, 0.88) 32%,
+            rgba(2, 6, 23, 0.45) 65%,
+            rgba(2, 6, 23, 0.82) 100%
+        ),
+        url("https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg");
+
+    background-size: cover;
+    background-position: center;
+
+    border-bottom:
+        1px solid rgba(245, 158, 11, 0.18);
+}
+
+
+/* Cinematic glow */
+
+.Home-hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    right: -180px;
+    bottom: -250px;
+
+    background:
+        rgba(245, 158, 11, 0.10);
+
+    filter: blur(100px);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+
+/* Hero content */
+
+.Hero-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 650px;
+}
+
+
+/* Small heading */
+
+.Hero-label {
+    display: inline-block;
+
+    padding: 8px 14px;
+
+    border: 1px solid
+        rgba(245, 158, 11, 0.45);
+
+    border-radius: 30px;
+
+    background:
+        rgba(245, 158, 11, 0.08);
+
+    color: #f59e0b;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+
+/* Main heading */
+
+.Hero-content h1 {
+    margin: 22px 0 18px;
+
+    font-size: 64px;
+
+    line-height: 1.05;
+
+    letter-spacing: -1.5px;
+
+    font-weight: 800;
+}
+
+.Hero-content h1 span {
+    display: block;
+
+    color: #f59e0b;
+
+    text-shadow:
+        0 0 25px
+        rgba(245, 158, 11, 0.18);
+}
+
+
+/* Description */
+
+.Hero-content p {
+    max-width: 540px;
+
+    margin: 0;
+
+    color: #cbd5e1;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+
+/* Book button */
+
+.Hero-btn {
+    margin-top: 30px;
+
+    padding: 15px 27px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fbbf24,
+            #f59e0b
+        );
+
+    color: #111827;
+
+    font-size: 16px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 10px 30px
+        rgba(245, 158, 11, 0.20);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.Hero-btn span {
+    margin-left: 10px;
+
+    font-size: 18px;
+}
+
+.Hero-btn:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 15px 35px
+        rgba(245, 158, 11, 0.35);
+}
+
+
+/* Hero responsive */
+
+@media (max-width: 900px) {
+
+    .Home-hero {
+        min-height: 560px;
+
+        padding: 80px 6%;
+    }
+
+    .Hero-content h1 {
+        font-size: 50px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .Home-hero {
+        min-height: 520px;
+
+        padding: 70px 25px;
+    }
+
+    .Hero-content h1 {
+        font-size: 40px;
+    }
+
+    .Hero-content p {
+        font-size: 15px;
+    }
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.Premium-features {
+
+    width: 90%;
+
+    margin: -35px auto 0;
+
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    background:
+        linear-gradient(
+            145deg,
+            #111827,
+            #070d18
+        );
+
+    border: 1px solid
+        rgba(245, 158, 11, 0.35);
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 20px 50px
+        rgba(0, 0, 0, 0.5);
+}
+
+.Feature-card {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 25px;
+
+    border-right:
+        1px solid #334155;
+}
+
+.Feature-card:last-child {
+    border-right: none;
+}
+
+.Feature-icon {
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        rgba(245, 158, 11, 0.12);
+
+    color: #f59e0b;
+
+    font-size: 20px;
+}
+
+.Feature-card h3 {
+
+    margin: 0 0 5px;
+
+    font-size: 15px;
+}
+
+.Feature-card p {
+
+    margin: 0;
+
+    color: #94a3b8;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   NOW SHOWING
+========================= */
+
+.Now-showing {
+
+    padding: 80px 5%;
+}
+
+.Section-heading {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+.Section-heading h2 {
+
+    margin: 0;
+
+    font-size: 32px;
+}
+
+.Section-heading h2::before {
+
+    content: "";
+
+    display: inline-block;
+
+    width: 35px;
+
+    height: 3px;
+
+    margin-right: 15px;
+
+    background: #f59e0b;
+
+    vertical-align: middle;
+}
+
+.Section-heading p {
+
+    color: #94a3b8;
+
+    margin: 8px 0 0 50px;
+}
+
+.Section-heading > span {
+
+    color: #f59e0b;
+
+    cursor: pointer;
+
+    font-weight: 600;
+}
+
+
+/* Movie Cards */
+
+.Home-movie-list {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 22px;
+}
+
+.Home-movie-card {
+    overflow: hidden;
+    background: linear-gradient(
+        145deg,
+        #111827,
+        #050a12
+    );
+
+    border: 1px solid #263244;
+    border-radius: 16px;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.Home-movie-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #f59e0b;
+
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.65),
+        0 0 20px rgba(245, 158, 11, 0.12);
+}
+
+
+/* Movie Poster */
+
+.Home-movie-image {
+    height: 360px;
+    overflow: hidden;
+    position: relative;
+}
+
+.Home-movie-image::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 35%;
+
+    background: linear-gradient(
+        transparent,
+        rgba(2, 6, 23, 0.85)
+    );
+}
+
+.Home-movie-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition:
+        transform 0.4s ease;
+}
+
+.Home-movie-card:hover
+.Home-movie-image img {
+    transform: scale(1.06);
+}
+
+
+/* Movie Information */
+
+.Home-movie-info {
+    padding: 18px;
+}
+
+.Home-movie-info h3 {
+    margin: 0 0 7px;
+
+    font-size: 19px;
+
+    color: white;
+}
+
+.Home-movie-info p {
+    margin: 0;
+
+    color: #94a3b8;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* Rating + Button */
+
+.Movie-bottom {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 18px;
+}
+
+.Movie-bottom span {
+    color: #f59e0b;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+.Movie-bottom button {
+    padding: 8px 15px;
+
+    border: 1px solid #f59e0b;
+
+    border-radius: 20px;
+
+    background: transparent;
+
+    color: #f59e0b;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.Movie-bottom button:hover {
+    background: #f59e0b;
+
+    color: #111827;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   PREMIUM CINEMA
+========================= */
+
+.Premium-cinema {
+
+    width: 90%;
+
+    margin: 20px auto 80px;
+
+    min-height: 300px;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1.5fr 1fr;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            145deg,
+            #111827,
+            #050a12
+        );
+
+    border:
+        1px solid
+        rgba(245, 158, 11, 0.35);
+
+    border-radius: 20px;
+}
+
+.Cinema-image {
+
+    height: 100%;
+
+    min-height: 300px;
+
+    background-image:
+        url("https://images.pexels.com/photos/7991486/pexels-photo-7991486.jpeg");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.Cinema-content {
+
+    padding: 40px;
+}
+
+.Cinema-content > span {
+
+    color: #f59e0b;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    font-weight: bold;
+}
+
+.Cinema-content h2 {
+
+    font-size: 32px;
+
+    margin: 15px 0;
+}
+
+.Cinema-content p {
+
+    color: #94a3b8;
+
+    line-height: 1.7;
+}
+
+.Cinema-content button {
+
+    margin-top: 15px;
+
+    padding: 11px 20px;
+
+    border: 1px solid #f59e0b;
+
+    border-radius: 25px;
+
+    background: transparent;
+
+    color: #f59e0b;
+
+    cursor: pointer;
+}
+
+.Cinema-stats {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 35px;
+
+    padding: 25px;
+}
+
+.Cinema-stats div {
+
+    text-align: center;
+}
+
+.Cinema-stats strong {
+
+    display: block;
+
+    color: #f59e0b;
+
+    font-size: 28px;
+}
+
+.Cinema-stats span {
+
+    color: #94a3b8;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   FINAL CTA
+========================= */
+
+.Home-cta {
+
+    padding: 80px 20px;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(245, 158, 11, 0.12),
+            transparent 55%
+        );
+}
+
+.Home-cta > span {
+
+    color: #f59e0b;
+
+    font-size: 13px;
+
+    letter-spacing: 3px;
+}
+
+.Home-cta h2 {
+
+    font-size: 42px;
+
+    margin: 15px 0;
+}
+
+.Home-cta h2 span {
+
+    color: #f59e0b;
+}
+
+.Home-cta p {
+
+    color: #94a3b8;
+
+    margin-bottom: 25px;
+}
+
+.Home-cta button {
+
+    padding: 14px 28px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fbbf24,
+            #f59e0b
+        );
+
+    color: #111827;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .Home-content h1 {
+        font-size: 45px;
+    }
+
+    .Premium-features {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .Feature-card:nth-child(2) {
+        border-right: none;
+    }
+
+    .Home-movie-list {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .Premium-cinema {
+        grid-template-columns: 1fr;
+    }
+
+    .Cinema-stats {
+        padding-bottom: 35px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .Home-hero {
+        padding: 60px 25px;
+    }
+
+    .Hero-content h1 {
+        font-size: 38px;
+    }
+
+    .Premium-features {
+        grid-template-columns: 1fr;
+    }
+
+    .Feature-card {
+        border-right: none;
+        border-bottom:
+            1px solid #334155;
+    }
+
+    .Home-movie-list {
+        grid-template-columns: 1fr;
+    }
+
+    .Section-heading {
+        align-items: flex-start;
+    }
+
+    .Cinema-stats {
+        flex-direction: column;
+    }
+
+    .Home-cta h2 {
+        font-size: 32px;
+    }
+}

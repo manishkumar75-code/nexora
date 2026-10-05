@@ -1,0 +1,41 @@
+.MovieDetails {
+    min-height: 100vh;
+    padding: 120px 80px;
+    background-color: #0f172a;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+
+}
+
+.MovieDetails-image img {
+    width: 300px;
+    height: 440px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.MovieDetails-info h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+
+}
+
+.Book-seats-btn {
+    padding: 12px 28px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f59e0b;
+    color: #111827;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.Book-seats-btn:hover {
+    background-color: #d97706;
+}

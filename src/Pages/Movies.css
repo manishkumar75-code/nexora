@@ -1,0 +1,64 @@
+
+.Movies {
+    min-height: 100vh;
+    padding: 100px 50px;
+    color: white;
+
+    background-image: linear-gradient(rgba( 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    url("../assets/Movie-bg.png");
+    background-size: 110%;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: backgroundMove 8s ease-in-out infinite alternate;
+
+}
+
+/* Background Animation */
+
+@keyframes backgroundMove {
+    0%{
+        background-position: 45% center;
+        background-size: 100%;
+    }
+    50%{
+        background-position: 50% center;
+        background-size: 110%;
+    }
+}
+
+/* Heading */
+
+.Movies h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* Description */
+
+.Movies >p {
+    text-align: center;
+    color: #cbd5d1;
+    margin-bottom: 30px;
+}
+
+/* Search Box */
+
+.Movies-Search {
+    display: flex;
+    justify-content: center;
+    width: 110%;
+}
+
+.Movies-Search input {
+    width: 600px !important;
+    height: 50px;
+    padding: 0 20px;
+
+    box-sizing: border-box;
+
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 17px;
+}

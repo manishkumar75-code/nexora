@@ -1,0 +1,60 @@
+.PopularMovies {
+    padding: 60px 50px;
+    
+}
+
+.PopularMovies h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.Movie-cards {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.Movie-card {
+    width: 260px;
+    background-color: #111827;
+    border-radius: 12px;
+    overflow: hidden;
+    padding-bottom:15px;
+    text-align: center;
+}
+
+.Movie-card img {
+    width: 100%;
+    height: 300px;
+    object-fit:contain;
+    display: block;
+    background-color: #111827;
+}
+
+.Movie-card h2 {
+    font-size: 21px;
+    margin: 12px 5px 5px;
+}
+
+.Movie-card p {
+    color: #cbd5de1;
+    margin:5px;
+}
+
+.Movie-card button {
+    margin-top: 12px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #f39c07;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+
+.Movie-card button:hover {
+    background-color: #be6704;
+}

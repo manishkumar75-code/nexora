@@ -1,0 +1,28 @@
+
+.Hero {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+.Hero-content {
+  max-width: 550px;
+  color: white;
+}
+.Hero-content h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.Hero-content p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.Hero-content button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
